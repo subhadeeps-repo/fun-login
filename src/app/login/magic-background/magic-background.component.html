@@ -1,0 +1,4 @@
+<div #container class="container" (mousemove)="onMouseMove($event)" (mouseleave)="resetGlow()">
+  <div class="box" *ngFor="let box of boxes; let i = index" [style.--glow-intensity]="glowIntensities[i]"
+    [class.glow-tail]="glowIntensities[i] > 0"></div>
+</div>

@@ -1,0 +1,88 @@
+.auth-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 520px;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.auth-card {
+  width: 200%;
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.auth-card.signup {
+  transform: translateX(-50%);
+}
+
+.form {
+  width: 50%;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+}
+
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background: #ff4444;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #ff2222;
+}
+
+.switch {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+.switch a {
+  color: #ffaaaa;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.otp-section {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.box {
+  background: linear-gradient(135deg, #0c0c0c, #000000);
+  height: 150px;
+  border-radius: 3px;
+  border-color: #ff0000;
+  box-shadow: 0 4px 12px rgba(172, 4, 4, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 8px 2px #ff0000,
+    0 0 20px 6px rgba(255, 0, 0, 0.6),
+    0 0 30px 10px rgba(255, 0, 0, 0.4);
+}
+
+.glow-tail {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 8px 2px #ff0000,
+    0 0 20px 6px rgba(255, 0, 0, 0.6),
+    0 0 30px 10px rgba(255, 0, 0, 0.4);
+}

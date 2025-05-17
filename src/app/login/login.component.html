@@ -1,0 +1,31 @@
+
+<app-magic-background></app-magic-background>
+
+<div class="auth-wrapper">
+  <div class="auth-card" [class.signup]="isSignUp">
+    <!-- Login Form -->
+    <div class="form login-form">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+      <p class="switch">
+        Don't have an account? <a (click)="toggleAuthMode()">Sign up</a>
+      </p>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form signup-form">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Full Name" />
+      <input type="tel" placeholder="Phone Number" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <input type="password" placeholder="Confirm Password" />
+      <button>Sign Up</button>
+      <p class="switch">
+        Already have an account? <a (click)="toggleAuthMode()">Login</a>
+      </p>
+    </div>
+  </div>
+</div>
